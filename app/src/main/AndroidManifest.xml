@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.subscription.tracker.android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.StartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.authentication.PhoneLoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.authentication.VerifyPhoneActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.authentication.AfterSignInActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.main.VisitorActivity"
+            android:label="@string/title_activity_visitor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.main.AdminOwnerInstrActivity"
+            android:label="@string/title_activity_admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.qrscanner.QRScannerActivity"
+            android:label="@string/use_subscription_dialog_title"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/visitor_navigation"
+    app:startDestination="@+id/nav_home_visitor">
+
+    <fragment
+        android:id="@+id/nav_home_visitor"
+        android:name="com.subscription.tracker.android.activity.main.fragments.home.VisitorHomeFragment"
+        android:label="@string/drawer_menu_visitor_subscription"
+        tools:layout="@layout/fragment_home_visitor" />
+
+    <fragment
+        android:id="@+id/visitor_timetable_nav_item"
+        android:name="com.subscription.tracker.android.activity.main.fragments.timetable.VisitorTimetableFragment"
+        android:label="@string/drawer_menu_timetable"
+        tools:layout="@layout/fragment_timetable_visitor" />
+
+    <fragment
+        android:id="@+id/club_info_nav_item"
+        android:name="com.subscription.tracker.android.activity.main.fragments.clubinfo.VisitorClubInfoFragment"
+        android:label="@string/drawer_menu_club_info"
+        tools:layout="@layout/fragment_club_info_admin" />
+
+    <fragment
+        android:id="@+id/nav_about_app_item"
+        android:name="com.subscription.tracker.android.activity.main.fragments.appinfo.AppInfoFragment"
+        android:label="@string/drawer_menu_about_app"
+        tools:layout="@layout/fragment_app_info" />
+
+</navigation>

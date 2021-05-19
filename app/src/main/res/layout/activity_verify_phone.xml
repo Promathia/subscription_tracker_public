@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.authentication.VerifyPhoneActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingTop="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/phone_activity_background_image"
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:src="@drawable/start_activity_background" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/wait_for_the_phone_verification_code"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary" />
+
+        <ProgressBar
+            android:id="@+id/verify_phone_progress_progressbar"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/phone_login_button_resend_code"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:visibility="gone"
+            android:text="@string/button_label_send_code_once_again"
+            android:textColor="#cdd8f1" />
+
+        <EditText
+            android:id="@+id/editTextCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/verify_phone_progress_progressbar"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:digits="+0123456789"
+            android:drawablePadding="10dp"
+            android:hint="@string/enter_verification_code_here"
+            android:inputType="phone"/>
+
+        <Button
+            android:id="@+id/verify_phone_button_sign_in"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/button_label_sign_in"
+            android:textColor="#cdd8f1" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

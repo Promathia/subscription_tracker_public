@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Абонемент сервис</string>
+    <string name="login_with">Войти с помощью:</string>
+    <string name="please_enter_phone_number">Пожалуйста, введите Ваш номер телефона и нажмите продолжить.\n\nНа Ваш телефон будет отправлена СМС для подтверждения:</string>
+    <string name="button_label_continue">Продолжить</string>
+    <string name="button_label_send_code_once_again">Отправить код повторно</string>
+    <string name="phone_number_invalid">Проверьте указанный номер телефона</string>
+    <string name="phone_number_quota_exceeded">К сожалению, превышен лимит попыток</string>
+    <string name="phone_verification_code_malformat">Проверьте указанный код</string>
+    <string name="phone_verification_code_entered_invalid">Указан неверный код</string>
+    <string name="snackbar_control_label_close">Закрыть</string>
+    <string name="wait_for_the_phone_verification_code">Пожалуйста, дождитесь получения кода</string>
+    <string name="enter_verification_code_here">Введиет полученный код</string>
+    <string name="button_label_sign_in">Войти</string>
+
+    <string name="club_selection_text_info">В каком клубе вы бы хотели заниматься?</string>
+    <string name="please_select_city">Пожалуйста, выберите город</string>
+    <string name="please_select_club">Пожалуйста, выберите клуб</string>
+    <string name="no_clubs_for_this_city">Извините, но для этого города нет зарегистрированных клубов</string>
+    <string name="city_spinner_placeholder">Города...</string>
+    <string name="club_selection_no_club_selected">Пожалуйста, выберите клуб</string>
+
+    <string name="personal_data_text_info">Наш клуб хотел бы узнать о вас больше</string>
+    <string name="personal_data_text_info_first_last_name">Как Вас зовут</string>
+    <string name="personal_data_text_info_birth_date">Укажите Вашу дату рождения, чтобы мы могли сделать Вам подарок</string>
+    <string name="personal_data_field_required">Пожалуйста, заполните это поле</string>
+    <string name="personal_data_first_name">Имя</string>
+    <string name="personal_data_last_name">Фамилия</string>
+
+    <string name="error_google_auth_failed">Сбой Гугл аутентификации, пожалуйста, повторите попытку позже</string>
+    <string name="error_auth_failed">Сбой аутентификации, пожалуйста, повторите попытку позже</string>
+    <string name="error_getting_user_data_by_api">Невозможно получить данные пользователя</string>
+    <string name="error_updating_user_data_by_api">Невозможно изменить данные пользователя</string>
+    <string name="error_getting_users_list_by_api">Невозможно получить список пользователей</string>
+    <string name="error_getting_club_data_by_api">Невозможно получить данные о клубах</string>
+    <string name="error_getting_users_for_club_api">Невозможно получить список пользователей для клуба</string>
+    <string name="error_user_creation">Невозможно создать пользователя</string>
+    <string name="error_missing_access_rights">Извините, но у вас не достаточно прав для данной операции</string>
+    <string name="error_while_getting_subscriptions">Извините, не удалось получить типы абонементов</string>
+    <string name="error_general">Извините, что-то пошло не так</string>
+    <string name="error_this_club_has_empty_timetable">Для данного клуба расписание не заполнено</string>
+    <string name="error_this_club_has_empty_club_info">Информация о данном клубе не заполнена</string>
+    <string name="error_creating_timetable_for_this_club">Ошибка при сохранении распиания для данного клуба</string>
+    <string name="error_creating_club_info_for_this_club">Ошибка при сохранении информации о данном клубе</string>
+    <string name="error_qr_code_generation_for_user_subscription">Извините, не возможно сгенерировать QR код</string>
+    <string name="error_qr_code_mal_format">QR код неправильного формата</string>
+    <string name="error_user_subscription_is_above_deadline">Абонемент просрочен</string>
+    <string name="error_user_subscription_is_invalid_or_full_used">Абонемент полнолстью использован или истек срок действия</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Заголовок</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_visitor">Абонемент</string>
+    <string name="title_activity_admin">Список посетителей</string>
+
+    <string name="drawer_menu_admin_owner_inst_list_visitors">Посетители</string>
+    <string name="drawer_menu_visitor_subscription">Абонемент</string>
+    <string name="drawer_menu_timetable">Расписание</string>
+    <string name="drawer_menu_club_info">Информация о клубе</string>
+    <string name="drawer_menu_about_app">О приложении</string>
+    <string name="drawer_menu_do_logout">Выход</string>
+    <string name="drawer_club_header_text">Клуб:</string>
+    <string name="drawer_user_header_text">Пользователь:</string>
+
+    <string name="subscription_add_item_visits">Количество посещений:</string>
+    <string name="subscription_add_item_terms">Срок действия (в днях):</string>
+    <string name="subscription_add_item_unlimited_text">анлим</string>
+    <string name="subscription_add_to_user_successfully">Абонемент успешно добавлен пользователю</string>
+    <string name="subscription_use_for_user_successfully">Занятие успешно списано</string>
+
+    <string name="user_subscription_title">Активный абонемент:</string>
+    <string name="user_subscription_number_of_visits">количество посещений</string>
+    <string name="user_subscription_deadline">срок действия до</string>
+    <string name="visitor_home_not_accepted_to_club_text">Администраторы вскоре примут Вас в клуб</string>
+    <string name="visitor_home_no_active_subscriptions_text">На данный момент у Вас нет активных абонементов</string>
+    <string name="visitor_home_subscription_total_from_used">из</string>
+
+    <string name="qr_code_scanner_title">Наведите камеру на QR код</string>
+    <string name="use_subscription_dialog_title">Списание абонемента</string>
+    <string name="use_subscription_dialog_message">Списать занятие?</string>
+    <string name="use_subscription_dialog_positive_response">Да</string>
+    <string name="use_subscription_dialog_negative_response">Отмена</string>
+
+    <string name="timetable_insert_text_hint">Добавьте текст здесь...</string>
+    <string name="timetable_preview_text_will_appear_here">Предварительный просмотр:</string>
+    <string name="timetable_visitor_label">Расписание клуба:</string>
+    <string name="timetable_save_button_label">Сохранить</string>
+    <string name="timetable_saved_successfully">Расписание успешно создано</string>
+    <string name="timetable_updated_successfully">Расписание успешно обновлено</string>
+
+    <string name="club_info_preview_text_will_appear_here">Предварительный просмотр:</string>
+    <string name="club_info_save_button_label">Сохранить</string>
+    <string name="club_info_saved_successfully">Информация о клубе успешно добавлена</string>
+    <string name="club_info_updated_successfully">Информация о клубе успешно обновлена</string>
+    <string name="club_info_visitor_label">Информация о клубе:</string>
+
+    <string name="hyperlink_setup_save_button_label">Сохранить</string>
+    <string name="hyperlink_dialog_title">Вставка ссылки</string>
+    <string name="hyperlink_setup_link_label">Текст</string>
+    <string name="hyperlink_setup_copy_label">Ссылка</string>
+    <string name="hyperlink_field_required">Данное поле обязательно</string>
+    <string name="hyperlink_link_field_bad_format">Ссылка должна начинаться с http или tel: или mailto:</string>
+
+    <string name="app_info_title">Спасибо, что пользуетесь приложением "Абонемент Сервис"</string>
+    <string name="app_info_app_version">Версия: 0.7 Alpha</string>
+    <string name="app_info_short_info">Краткое описание: данное приложение позволяет контролировать посещения в спортивном клубе</string>
+    <string name="app_info_app_developer">Разработчик: Akulenka Ivan</string>
+    <string name="app_info_app_contacts">Контактные данные: <a href="mailto:ivakulenka@gmail.com">ivakulenka@gmail.com</a></string>
+    <string name="app_info_app_licence">Лицензия: <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a></string>
+
+    <string name="user_name">Имя:</string>
+    <string name="user_surname">Фамилия:</string>
+    <string name="user_birth_date">Дата рождения:</string>
+    <string name="user_email">Почта:</string>
+    <string name="user_phone">Телефон:</string>
+    <string name="user_role">Роль:</string>
+    <string name="user_data_save_button_label">Сохранить</string>
+    <string name="user_card_accept_user">Принять</string>
+    <string name="user_card_add_subscription">Добавить</string>
+    <string name="user_card_spend_training">Списать</string>
+    <string name="no_users_in_list">Извините, но для этого клуба нет других зарегестрированных пользователей</string>
+
+    <string name="user_role_spinner_label">Роль...</string>
+    <string name="user_role_text_admin">Администратор</string>
+    <string name="user_role_text_owner">Владелец</string>
+    <string name="user_role_text_instructor">Тренер</string>
+    <string name="user_role_text_visitor">Посетитель</string>
+    <string name="user_edit_dialog_nothing_changed_message">Нет изменений для сохранения</string>
+    <string name="user_edit_dialog_update_success">Изменения сохранены успешно</string>
+
+    <string-array name="cities">
+        <item>Города...</item>
+        <item>Брест</item>
+        <item>Витебск</item>
+        <item>Гомель</item>
+        <item>Гродно</item>
+        <item>Минск</item>
+        <item>Могилев</item>
+    </string-array>
+
+    <string translatable="false" name="preference_file_key">com.subscription.tracker.android.activity.authentication.USER</string>
+    <string translatable="false" name="preference_user_data_key">USER_DATA_KEY</string>
+
+</resources>

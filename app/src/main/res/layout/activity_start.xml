@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StartActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:paddingTop="70dp"
+        android:paddingBottom="20dp"
+        android:text="@string/app_name"
+        android:textSize="@dimen/activity_start_title_font_size" />
+
+    <ImageView
+        android:id="@+id/start_activity_background_image"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:paddingTop="270dp"
+        android:src="@drawable/start_activity_background" />
+
+    <TextView
+        android:id="@+id/sign_in_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/start_activity_background_image"
+        android:text="@string/login_with"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/sign_in_copy"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/start_sign_in_button_shape"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/google_sign_in_icon"
+        android:elevation="10dp" />
+
+    <ImageButton
+        android:id="@+id/phone_sign_in_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/sign_in_copy"
+        android:src="@drawable/phone_sign_in_icon"
+        android:background="@drawable/start_sign_in_button_shape"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:scaleType="centerInside"
+        android:padding="10dp" />
+
+</RelativeLayout>

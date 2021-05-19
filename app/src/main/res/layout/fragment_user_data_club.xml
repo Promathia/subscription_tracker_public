@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/club_selection_text_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/club_selection_text_info"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/club_selection_text_select_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/please_select_city"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/club_selection_text_info"/>
+
+
+    <Spinner
+        android:id="@+id/spinner_city_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/club_selection_text_select_city"/>
+
+    <RelativeLayout
+        android:id="@+id/club_selection_club_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spinner_city_select">
+
+        <TextView
+            android:id="@+id/club_selection_text_select_club"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="@string/please_select_club"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/club_selection_text_no_clubs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/club_selection_text_select_club"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="@string/no_clubs_for_this_city"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/club_selection_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/club_selection_text_no_clubs"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="30dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="15sp"
+            android:scrollbars="none"
+            android:visibility="gone"
+            android:choiceMode="singleChoice" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/club_selection_next_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@id/club_selection_club_container"
+        android:layout_alignEnd="@id/club_selection_club_container"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/start_sign_in_button_shape"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/right_arrow_primary"
+        android:elevation="10dp" />
+
+</RelativeLayout>

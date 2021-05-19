@@ -1,0 +1,125 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10sp"
+    android:id="@+id/edit_visitor_dialog_layout">
+
+    <ProgressBar
+        android:id="@+id/user_data_progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_margin="80sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_gravity="center" />
+
+    <TableLayout
+        android:id="@+id/table_with_user_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <TableRow>
+            <TextView
+                android:text="@string/user_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+            <EditText
+                android:id="@+id/edit_user_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="200sp"
+                android:layout_column="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/user_surname"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+            <EditText
+                android:id="@+id/edit_user_surname"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="200sp"
+                android:layout_column="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/user_email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+            <EditText
+                android:id="@+id/edit_user_email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="200sp"
+                android:layout_column="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/user_phone"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+            <EditText
+                android:id="@+id/edit_user_phone"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="200sp"
+                android:digits="+0123456789"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:layout_column="2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="@string/user_birth_date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+            <EditText
+                android:id="@+id/edit_user_birthdate"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="200sp"
+                android:layout_column="2"/>
+        </TableRow>
+        <TableRow
+            android:paddingTop="10sp">
+            <TextView
+                android:text="@string/user_role"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1" />
+            <Spinner
+                android:id="@+id/edit_user_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_data_save_button_label"
+        android:visibility="gone"
+        android:id="@+id/edit_user_data_save" />
+
+</LinearLayout>

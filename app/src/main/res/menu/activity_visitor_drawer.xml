@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_visitor"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/drawer_menu_visitor_subscription" />
+        <item
+            android:id="@+id/visitor_timetable_nav_item"
+            android:icon="@drawable/ic_menu_timetable"
+            android:title="@string/drawer_menu_timetable" />
+        <item
+            android:id="@+id/club_info_nav_item"
+            android:icon="@drawable/ic_menu_club_info"
+            android:title="@string/drawer_menu_club_info" />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about_app_item"
+            android:icon="@drawable/ic_menu_about_application"
+            android:title="@string/drawer_menu_about_app" />
+        <item
+            android:id="@+id/nav_do_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:onClick="doLogout"
+            android:title="@string/drawer_menu_do_logout" />
+    </group>
+
+</menu>
